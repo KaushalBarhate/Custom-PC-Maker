@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title>DIY PC</title>
+    <link rel="stylesheet" type="text/css" href="Frontend.css">
+    <style>
+    body 
+    {
+        background-image: url("bg1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+      
+        /*button 
+      {
+          margin-left:40%;
+          margin-right:40%;
+      }
+      button:hover{
+        cursor:pointer;
+      }*/
+
+        h1{opacity:1;}
+        p{opacity:1;}
+		
+		.tooltip {
+  position: relative;
+  display: inline-block;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  border-left: 1px  dotted black;
+  border-right: 1px dotted black;
+}
+	.tooltip .tooltiptext {
+	  visibility: hidden;
+	  width: 430px;
+	  background-color: black;
+	  color: #fff;
+	  text-align: center;
+	  border-radius: 6px;
+	  padding: 5px 0;
+	  /* Position the tooltip */
+	  position: absolute;
+	  z-index: 1;
+	  top: -5px;
+	  left: 105%;
+	}
+
+	.tooltip:hover .tooltiptext {
+	  visibility: visible;
+	}
+    </style>
+</head>
+<body>
+    <h1 style=" margin-bottom: 5%;margin-top:0px; font-size: 400%;color: white;text-align: center;">DIY PC</h1>
+    
+    <form action="Processor.php" style="margin: top 10%;">
+        <h1 style="color: white; border-color:rgba(240,0,0,0.5) ; background-color:rgba(240,0,0,0.8); text-align: center;">KNOW YOUR STEPS</h1>
+        <h2>1.  Pick your Processor 
+			<div class="tooltip">info
+			<span class="tooltiptext">The processor is the heart of the laptop and has the greatest impact on the laptop's productivity.
+	                                  A faster processor means apps load quickly, you can run multiple apps at once,
+	                                  and the computer won't lag and cause slowdowns when you run processor-intensive tasks.
+	                                  Larger the value of TDP(Thermal Design Power) and core, better the performance is.</span>
+			</div>
+		</h2>
+        <h2>2.  Choose your Motherboard
+		<div class="tooltip">info
+		<span class="tooltiptext">The motherboard is the backbone that ties the computer’s components together at one spot and allows them to interact with each other.
+									Without it, none of the computer pieces, such as the processor, GPU, etc could interact.
+									Thus a motherboard has to be compatible with the processor and RAM.
+									Since only the compatible components of the chosen components are displayed, it won't be an issue.</span>
+		</div>
+		</h2>
+        <h2>3.  Choose your RAM
+		<div class="tooltip">info
+		<span class="tooltiptext">RAM(Random Access Memory) works as our PC's active working memory.
+								The more RAM, the more information a computer can work with at the same time,
+								so it can have a dramatic effect on the total performance of the system.</span>
+		</div>
+		</h2>
+        <h2>4.  Pick your GPU or Skip 
+		<div class="tooltip">info
+		<span class="tooltiptext">GPU(Graphics processing unit) is a specialized processor designed to accelerate graphics rendering.
+									GPUs can process many pieces of data simultaneously, making them useful for machine learning, video editing, gaming applications, etc.
+								    Having a GPU is not mandatory because a PC can function well even without it.
+									</span>
+		</div>
+		</h2>
+        <h2>5.  Pick your Storage
+		<div class="tooltip">info
+		<span class="tooltiptext">Storage component is of two types namely SSD(solid-state drive) HDD (hard disk drive).
+								SSD is faster than HDD. SSDs don't have physical moving parts.
+								More the memory, more data it can store.
+								While using SSD, the laptop will boot quickly.</span>
+		</h2>
+        <h2>6.  All Done!! We'll make your CPU</h2>
+    <button type="submit" name="submit" value="DIYPC" style="position: centre; font-size: 150%;"><b>Build Your PC</b></button>
+    </form>
+</body>
+</html>
